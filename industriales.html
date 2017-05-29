@@ -52,15 +52,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <h2 class="w3-text-teal">Agricultura</h2>
       <p> La agricultura representa el 5.8 % del VAB regional. En la región existen tres espacios económicos diferenciados: el norte es especializado en la actividad agrícola con cultivos como el café, arroz y cacao; en el centro se desarrolla también la actividad agrícola y adicionalmente la actividad pecuaria; por el contrario, el sur es básicamente una zona ganadera y minera, con un mayor desarrollo del sector servicios y comercio, producto de encadenamientos con la actividad minera..</p>
     	
-    	<div class="row">
+    <div class="row">
     <div class="col-md-4">
       <div class="thumbnail">
-        <a href="img/cajamarca1.jpg" target="_blank">
-          <img src="img/cajamarca1.jpg" alt="agricultura" style="width:20%">
+          <img class="materialboxed" width="20%" src="img/cajamarca1.jpg">
           <div class="caption">
             <p>Agricultores en cajamarca</p>
           </div>
-        </a>
       </div>
     </div>
     <div class="col-md-4">
@@ -74,7 +72,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       </div>
     </div>
   </div>
-    </div>
+  </div>
   </div>
 
   <div class="w3-row">
@@ -199,7 +197,13 @@ function w3_close() {
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });  
+ </script>  
+
 
 </body>
 </html>
