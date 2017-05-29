@@ -2,12 +2,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -24,48 +26,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <body class="w3-black">
 
 <header> 
-  <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">ELISEO</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html">INICIO</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
-  </div>
-  <div>
-  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="img/eliseo.jpg" onclick="document.getElementById('modal01').style.display='block'" class="w3-hover-opacity" style="width:100%">
-  <div id="modal01" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
-  			<img class="w3-modal-content" src="img/eliseo.jpg">
-		</div>
-  <a href="#" class="w3-bar-item w3-button w3-padding-small w3-black">
-    
-    <p>CAJAMARCA</p>
-  </a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
-    
-    <p>CHOTA</p>
-  </a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
-    
-    <p>CUTERVO</p>
-  </a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
-    
-    <p>CELENDIN</p>
-  </a>
-  <a href="industriales.html" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
-    
-    <p>INDUSTRIALES</p>
-  </a>
+  <!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card-2 w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
 </nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16">My Food</div>
   </div>
-</nav>
+</div>
 </header>
 
 
