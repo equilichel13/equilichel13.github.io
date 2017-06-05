@@ -163,11 +163,10 @@
 	<div id="pricing" class="container-fluid">
 		<div class="text-center">
 			<h2>Precios</h2>
-			<h4>Choose a payment plan that works for you</h4>
 		</div>
-		<div class="w3-row-padding" style="margin: 0 -16px">
-			<div class="w3-third w3-margin-bottom">
-				<ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+		<div class="row slideanim" style="margin: 0 -16px">
+			<div class="col-sm-4 col-xs-12">
+				<ul class="panel panel-default text-center">
 					<li class="w3-dark-grey w3-xlarge w3-padding-32">Programador</li>
 					<li class="w3-padding-16">Diseño Web</li>
 					<li class="w3-padding-16">Host</li>
@@ -201,30 +200,31 @@
 				</ul>
 			</div>
 		</div>
-		</div>
+	</div>
 
-		<!-- Container (Contact Section) -->
-		<div id="contact" class="container-fluid bg-grey">
-			<h2 class="text-center">CONTACTAME</h2>
-			<div class="row">
-				<div class="col-sm-5">
-					<p>
-						<span class="glyphicon glyphicon-map-marker"></span> Cajamarca, Perú
-					</p>
-					<p>
-						<span class="glyphicon glyphicon-phone"></span> Celular: 920029849
-					</p>
-					<p>
-						<span class="glyphicon glyphicon-envelope"></span>
-						E-mail: equilichel13@unc.edu.pe
-					</p>
-				</div>
+	<!-- Container (Contact Section) -->
+	<div id="contact" class="container-fluid bg-grey">
+		<h2 class="text-center">CONTACTAME</h2>
+		<div class="row">
+			<div class="col-sm-5">
+				<p>
+					<span class="glyphicon glyphicon-map-marker"></span> Cajamarca,
+					Perú
+				</p>
+				<p>
+					<span class="glyphicon glyphicon-phone"></span> Celular: 920029849
+				</p>
+				<p>
+					<span class="glyphicon glyphicon-envelope"></span> E-mail:
+					equilichel13@unc.edu.pe
+				</p>
 			</div>
 		</div>
+	</div>
 
-		<!-- Add Google Maps -->
-		<div id="googleMap" style="height: 400px; width: 100%;"></div>
-		<script>
+	<!-- Add Google Maps -->
+	<div id="googleMap" style="height: 400px; width: 100%;"></div>
+	<script>
 		function myMap() {
 			var myCenter = new google.maps.LatLng(41.878114, -87.629798);
 			var mapProp = {
@@ -242,24 +242,38 @@
 			marker.setMap(map);
 		}
 	</script>
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-		<!--
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+	<!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
-		<footer class="container-fluid text-center">
-			<a href="#myPage" title="To Top"> <span
-				class="glyphicon glyphicon-chevron-up"></span>
-			</a>
-			<p>
-				Bootstrap Theme Made By <a href="https://www.w3schools.com"
-					title="Visit w3schools">www.w3schools.com</a>
-			</p>
-		</footer>
+	<footer class="container-fluid text-center">
+		<a href="#myPage" title="To Top"> <span
+			class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<p>
+			<a href="https://www.facebook.com/frank.quilichellico"
+				target="_blank" class="fa fa-facebook-official w3-hover-opacity"></a>
+			<a href="https://www.instagram.com/frankeliseoqll/" target="_blank"
+				class="fa fa-instagram w3-hover-opacity"></a> <a
+				href="https://es.pinterest.com/espider_167/" target="_blank"
+				class="fa fa-pinterest-p w3-hover-opacity"></a> <a
+				href="https://twitter.com/FrankEliseoQL" target="_blank"
+				class="fa fa-twitter w3-hover-opacity"></a> <a
+				href="https://soundcloud.com/dj-laxx" target="_blank"
+				class="fa fa-soundcloud w3-hover-opacity"></a>
+		<p class="w3-medium">
+			Desarrollado por <a
+				href="https://www.facebook.com/frank.quilichellico" target="_blank"
+				class="w3-hover-text-green">Eliseo Quiliche Llico</a>
+		</p>
+		</p>
 
-		<script>
+	</footer>
+
+	<script>
 		$(document).ready(
 				function() {
 					// Add smooth scrolling to all links in navbar + footer link
@@ -298,24 +312,28 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 				})
 	</script>
 
-		<script> 
-var slideIndex = 1;
-showDivs(slideIndex);
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = x.length
+			}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			x[slideIndex - 1].style.display = "block";
+		}
+	</script>
 </body>
 </html>
