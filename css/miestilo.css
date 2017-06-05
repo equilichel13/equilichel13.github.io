@@ -1,12 +1,6 @@
 @CHARSET "UTF-8";
 
-header{
-	background: #222222;
-	padding: 20px;
-	text-align: center;
-	color: #ffffff;
-	font: bold 26px verdana, sans-serif;
-}
+
 .navbar {
 	margin-bottom: 0;
 	border-radius: 0;
