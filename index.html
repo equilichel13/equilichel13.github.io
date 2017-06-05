@@ -12,6 +12,7 @@
 	rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lato"
 	rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/styleIndec.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
@@ -44,7 +45,7 @@
 	</nav>
 
 	<div class="jumbotron text-center">
-		<h1>ELISEO Q.LL.</h1>
+		<h1>ELISEO</h1>
 		<p>Programador, Diseñador en Corel Draw, DJ y Dibujante</p>
 	</div>
 
@@ -257,14 +258,23 @@
 	<!-- Add Google Maps -->
 	<div id="googleMap" style="height: 400px; width: 100%;"></div>
 	<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
+		function myMap() {
+			var myCenter = new google.maps.LatLng(-7.170474, -78.514244);
+			var mapProp = {
+				center : myCenter,
+				zoom : 12,
+				scrollwheel : false,
+				draggable : false,
+				mapTypeId : google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("googleMap"),
+					mapProp);
+			var marker = new google.maps.Marker({
+				position : myCenter
+			});
+			marker.setMap(map);
+		}
+	</script>
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 	<!--
