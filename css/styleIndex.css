@@ -181,7 +181,7 @@ body {
   .social {
 	position: fixed;
 	/* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
-	left: 0; /* Establecemos la barra en la izquierda */
+	right: 0; /* Establecemos la barra en la izquierda */
 	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
 	z-index: 2000;
 	/* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
@@ -192,9 +192,9 @@ body {
 }
 
 .social ul li a {
-	display: inline-block;
+	display: inline-block;/*para poder editar*/
 	color: #fff;
-	background: #000;
+	background: #ff8000;
 	padding: 10px 15px;
 	text-decoration: none;
 	-webkit-transition: all 500ms ease;
@@ -203,19 +203,19 @@ body {
 	/* Establecemos una transición a todas las propiedades */
 }
 
-.social ul li .icon-facebook {
+.social ul li .fa fa-facebook-official w3-hover-opacity {
 	background: #3b5998;
 }
 	/* Establecemos los colores de cada red social, aprovechando su class */
-.social ul li .icon-twitter {
+.social ul li .fa fa-twitter w3-hover-opacity {
 	background: #00abf0;
 }
 
-.social ul li .icon-googleplus {
+.social ul li .fa fa-google w3-hover-opacity {
 	background: #d95232;
 }
 
-.social ul li .icon-pinterest {
+.social ul li .fa fa-pinterest-p w3-hover-opacity {
 	background: #ae181f;
 }
 
