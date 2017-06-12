@@ -237,7 +237,7 @@ translateY
 	position: fixed;
 	/* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
 	right: 0; /* Establecemos la barra en la derecha */
-	top: 390px; /* Bajamos la barra 200px de arriba a abajo */
+	top: 20px; /* Bajamos la barra 200px de arriba a abajo */
 	z-index: 2000;
 	/* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
@@ -249,8 +249,8 @@ translateY
 .social ul li a {
 	display: inline-block; /*para poder editar*/
 	color: #fff;
-	background: #F4511E;
-	padding: 15px 15px;
+	background: #c5c1a9;
+	padding: 10px 15px;
 	text-decoration: none;
 	-webkit-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
