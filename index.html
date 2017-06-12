@@ -4,16 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat"
-	rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Lato"
-	rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/styleIndex.css">
 <link rel="stylesheet" href="css/fonts.css">
+<script src = "js/map.js"type="text/javascript"></script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
@@ -263,25 +260,6 @@
 	<!-- Add Google Maps -->
 	<p>MI UBICACION</p>
 	<div id="googleMap" style="height: 400px; width: 100%;"></div>
-
-	<script>
-		function myMap() {
-			var myCenter = new google.maps.LatLng(-7.170474, -78.514244);
-			var mapProp = {
-				center : myCenter,
-				zoom : 12,
-				scrollwheel : false,
-				draggable : false,
-				mapTypeId : google.maps.MapTypeId.ROADMAP
-			};
-			var map = new google.maps.Map(document.getElementById("googleMap"),
-					mapProp);
-			var marker = new google.maps.Marker({
-				position : myCenter
-			});
-			marker.setMap(map);
-		}
-	</script>
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBioN6RHtoj5SAw2-OXq4beIAmu0w3VORY&callback=myMap"></script>
 	<!--
