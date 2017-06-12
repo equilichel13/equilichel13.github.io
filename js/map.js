@@ -2,7 +2,7 @@ function myMap() {
 			var myCenter = new google.maps.LatLng(-7.170474, -78.514244);
 			var mapProp = {
 				center : myCenter,
-				zoom : 48,
+				zoom : 12,
 				scrollwheel : false,
 				draggable : false,
 				mapTypeId : google.maps.MapTypeId.ROADMAP
